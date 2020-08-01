@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>GeekBrains - FORM</title>
+
+</head>
+<body>
+<h1>Фильтрация по ID</h1>
+
+<form action="#" th:action="@{/profile}" method="POST" th:object="${student}">
+    <a href="http://localhost:8080/students">go to Student</a>
+    <br>
+    First Name: <input type="text" name="id" class="form-control" placeholder="ID">
+    <br>
+       <button type="submit">Отправить</button>
+<div>
+    <table>
+        <tr>
+            <td> <p th:text="${studentList}"><p></td>
+        </tr>
+    </table>
+
+
+
+</div>
+
+
+
+
+</form>
+</body>
+</html>
